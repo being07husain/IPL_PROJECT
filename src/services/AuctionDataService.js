@@ -1,5 +1,5 @@
 // import data
-import auctionData from "../data/AuctionData";
+import auctionData from "../data/auctiondata";
 
 // ✅ Get all teams
 export const getAllTeams = () => auctionData.teams;
