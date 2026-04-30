@@ -1,0 +1,166 @@
+/* ===== PREMIUM FOOTER ===== */
+.ipl-footer {
+  background: #0A0E24;
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Prevents items from collapsing on each other */
+  padding: 50px 5%;
+  color: #e68f0e;
+  font-family: 'Inter', sans-serif;
+  border-top: 1px solid rgba(239, 184, 102, 0.25);
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.6);
+  position: relative;
+  overflow: hidden;
+  gap: 20px;
+}
+
+/* Subtle animated glow behind footer */
+.ipl-footer::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.08) 0%, transparent 70%);
+  animation: footerGlow 8s linear infinite;
+  z-index: 0;
+}
+
+@keyframes footerGlow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ===== PARTNER SECTION ===== */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  text-align: center;
+  gap: 10px; /* Space between label and logo */
+}
+
+.logo-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.partner-label {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #efb866, #facc15);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+/* ===== LOGOS ===== */
+.ipl-footer img {
+  height: auto;
+  max-width: 140px;
+  filter: brightness(0) invert(0.9) saturate(1.2);
+  transition: transform 0.4s ease, filter 0.4s ease;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.ipl-footer img:hover {
+  transform: translateY(-5px) scale(1.05);
+  filter: brightness(0) invert(1) saturate(2);
+}
+
+/* Specific logo sizing */
+.logo-tata {
+  width: 110px;
+}
+
+/* ===== DIVIDER ===== */
+.divider {
+  width: 2px;
+  height: 120px;
+  background: linear-gradient(180deg, transparent, rgba(239, 184, 102, 0.4), transparent);
+  margin: 0 15px;
+  opacity: 0.85;
+  border-radius: 3px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Base styles for potential typography/icons added per request */
+.ipl-footer h1, .ipl-footer h2, .ipl-footer h3, .ipl-footer h4, .ipl-footer h5, .ipl-footer h6 {
+  color: #FFFFFF;
+}
+
+.ipl-footer a {
+  color: #A0A7C0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.ipl-footer a:hover {
+  color: #FFFFFF;
+}
+
+.ipl-footer .icon:hover, .ipl-footer svg:hover, .ipl-footer i:hover {
+  color: #6C2BD9;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .ipl-footer {
+    padding: 40px 20px;
+    gap: 30px;
+  }
+  
+  .divider {
+    height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ipl-footer {
+    flex-direction: column;
+    padding: 60px 20px;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .ipl-footer img {
+    max-width: 160px;
+    margin: 0 auto;
+  }
+
+  .partner-label {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ipl-footer {
+    padding: 50px 15px;
+    gap: 40px;
+  }
+  
+  .ipl-footer img {
+    max-width: 130px;
+  }
+}

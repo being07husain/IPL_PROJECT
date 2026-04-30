@@ -1,0 +1,132 @@
+/* ===== TOPBAR BASE ===== */
+.topbar {
+  width: 100%;
+  height: 52px;
+  background: #0b1f4b; /* deep IPL-style blue */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* keeps topbar above content */
+}
+
+/* ===== LEFT SECTION ===== */
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* slightly more breathing space */
+}
+
+/* ===== LOGOS ===== */
+.logo {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* ===== TEXT LINKS ===== */
+.link-text {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+
+.link-text:hover {
+  color: #93c5fd; /* soft blue hover */
+}
+
+/* ===== DIVIDER ===== */
+.divider1 {
+  width: 1px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  margin: 0 8px;
+}
+
+/* ===== RIGHT SECTION ===== */
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* ===== FOLLOW TEXT ===== */
+.follow-text {
+  color: #cbd5e1;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+/* ===== SOCIAL ICONS ===== */
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: #2563eb; /* richer blue */
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Optional close icon style */
+.social-icon.close {
+  background: transparent;
+  font-size: 16px;
+  opacity: 0.7;
+  transition: color 0.25s ease;
+}
+
+.social-icon.close:hover {
+  color: #ef4444; /* red tone */
+  background: transparent;
+  opacity: 1;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .topbar {
+    padding: 0 16px;
+    height: 48px;
+  }
+
+  .link-text,
+  .follow-text,
+  .divider1 {
+    display: none; /* cleaner mobile */
+  }
+
+  .logo {
+    height: 24px;
+  }
+
+  .social-icon {
+    width: 26px;
+    height: 26px;
+    font-size: 12px;
+  }
+}

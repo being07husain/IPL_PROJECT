@@ -1,0 +1,207 @@
+/* ================= TEAMS SECTION ================= */
+/* ================= BANNER ================= */
+.banner-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.IPLBANNER {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ================= TEAMS LAYOUT ================= */
+.teams-section {
+  padding: 60px 5%;
+  background: #020817;
+}
+
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(14px, 2vw, 28px);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Last 2 items centered on 4-col desktop */
+@media (min-width: 1201px) {
+  .teams-grid a:nth-child(9) {
+    grid-column: 2;
+  }
+  .teams-grid a:nth-child(10) {
+    grid-column: 3;
+  }
+}
+
+.team-link {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+/* ================= TEAM CARD ================= */
+.TEAM-CARD {
+  width: 100%;
+  aspect-ratio: 5 / 6;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              box-shadow 0.35s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.TEAM-CARD:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.75);
+}
+
+/* IMAGE CONTAINER */
+.TEAM-CARD img {
+  width: 100%;
+  height: 75%;
+  object-fit: fill;
+  transition: transform 0.35s ease;
+  flex-shrink: 0;
+}
+
+.TEAM-CARD:hover img {
+  transform: scale(1.06);
+}
+
+/* TEXT AREA */
+.TEAM-CARD h3 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(11px, 1.1vw, 17px);
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  padding: 6px 10px;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.TEAM-CARD p {
+  font-size: clamp(9px, 0.85vw, 13px);
+  font-weight: 600;
+  color: #fffefe;
+  letter-spacing: 1px;
+  padding: 0 8px 8px;
+  margin: 0;
+  text-align: center;
+}
+
+/* CHAMPION TROPHY */
+.TEAM-CARD.champion::after {
+  content: "🏆";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  filter: drop-shadow(0 0 10px rgb(87, 77, 22));
+  opacity: 0.8;
+}
+
+/* ================= GRAPHS ================= */
+.GRAPHS {
+  background: #020617;
+  padding: 80px 20px;
+}
+
+.graph-wrapper {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+}
+
+.graph-title {
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 800;
+}
+
+.graph-card {
+  background: #1e293b;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.graph-img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.graph-insight {
+  text-align: center;
+  color: #cbd5e1;
+  font-size: 20px;
+  margin-top: 25px;
+  padding: 0 20px;
+}
+
+/* ================= RESPONSIVE MEDIA QUERIES ================= */
+
+@media (max-width: 1200px) {
+  .teams-section {
+    padding: 50px 4%;
+  }
+  .teams-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* Re-center last item when 10 items on 3-col */
+  .teams-grid a:nth-child(10) {
+    grid-column: 2;
+  }
+}
+
+@media (max-width: 900px) {
+  .teams-section {
+    padding: 40px 3%;
+  }
+  .teams-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+}
+
+@media (max-width: 660px) {
+  .teams-section {
+    padding: 30px 3%;
+  }
+  .teams-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  /* Reset nth-child overrides */
+  .teams-grid a:nth-child(9),
+  .teams-grid a:nth-child(10) {
+    grid-column: auto;
+  }
+  .TEAM-CARD {
+    border-radius: 12px;
+  }
+  .TEAM-CARD h3 {
+    font-size: clamp(10px, 3.5vw, 14px);
+  }
+}
+
+@media (max-width: 380px) {
+  .teams-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+}

@@ -1,0 +1,222 @@
+.lsgteam-details {
+  background-color: #081a3e;
+  padding: 50px 5%;
+  font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.lsgteam-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.lsgteam-title-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.lsgteam-identity {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.lsgmain-logo {
+  width: 170px;
+  height: 170px;
+  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.5));
+  margin: 5px;
+}
+
+.lsgteam-name-text {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+.lsgstats-box {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 20px 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  min-width: unset;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.lsgprofile-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.lsgprofile-table td {
+  padding: 12px 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.lsglabel {
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  width: 100px;
+}
+
+.lsgsep {
+   width: 30px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.176);
+}
+
+.lsgval {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.lsgofficial-site-btn {
+ background: #eb1c24;
+  border: none;
+  padding: 0;
+  width: 230px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.lsgofficial-site-btn a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px 10px 20px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.lsgofficial-site-btn:hover {
+  background: #c3131a;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(235, 28, 36, 0.3);
+}
+
+.lsgroster-container {
+  background-color: #ffffff;
+  background-image: url("https://documents.iplt20.com/ipl/LSG/Logos/LogoOutline/LSGoutline.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 900px 900px;
+  max-width: 1400px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding-left: 40px;
+}
+
+.lsgcategory-title {
+  color: #000000;
+  letter-spacing: 8px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  font-size: 1.4rem;
+  border-bottom: 2px solid rgba(1, 1, 1, 0.2);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+.lsgplayer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1300px;
+}
+
+/* Player Card */
+.lsgplayer-card {
+  background: #ffffff;
+  border: 2px solid #ff0202;
+  border-radius: 4px;
+  width: 218px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.lsgplayer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.lsgplayer-img-wrapper {
+  width: 223px;
+  height: 199px;
+  background-color: #f7f7f7;
+}
+
+.lsgplayer-img-wrapper img {
+  width: 223px;
+  height: 199px;
+  display: block;
+  border-bottom: 2px solid #f30505;
+}
+
+.lsgplayer-info {
+  padding: 12px 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .lsgteam-header-container {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .lsgteam-identity {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .lsgroster-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-size: 100% auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .lsgteam-name-text {
+    font-size: 1.8rem;
+  }
+  
+  .lsgmain-logo {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .lsgstats-box {
+    padding: 15px;
+  }
+  
+  .lsgplayer-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .lsgplayer-card, .lsgplayer-img-wrapper, .lsgplayer-img-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+}

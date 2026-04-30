@@ -1,0 +1,242 @@
+.pbksteam-details {
+  background-color: #d71920;
+  padding: 50px 5%;
+  font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.pbksteam-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.pbksteam-title-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.pbksteam-identity {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.pbksmain-logo {
+  width: 170px;
+  height: 170px;
+  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.5));
+  margin: 5px;
+}
+
+.pbksteam-name-text {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+.pbksstats-box {
+  background: rgba(0, 0, 0, 0.04);
+  padding: 20px 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  min-width: unset;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.pbksprofile-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pbksprofile-table td {
+  padding: 12px 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pbkslabel {
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  width: 100px;
+}
+
+.pbkssep {
+  width: 30px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.176);
+}
+
+.pbksval {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.pbksofficial-site-btn {
+  background: #d4af37;
+  border: none;
+  padding: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  text-align: center;
+  width: 234px;
+  align-items: center;
+}
+
+.pbksofficial-site-btn a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px 10px 20px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.pbksofficial-site-btn:hover {
+  background: #b6922a;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+.pbksroster-container {
+  background-color: #ffffff;
+  background-image: url("https://documents.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 900px 900px;
+  max-width: 1400px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding-left: 40px;
+}
+
+.pbkscategory-title {
+  color: #000000;
+  letter-spacing: 8px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  font-size: 1.4rem;
+  border-bottom: 2px solid rgba(1, 1, 1, 0.2);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+.pbksplayer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1300px;
+}
+
+/* Player Card */
+.pbksplayer-card {
+  background: #ffffff;
+  border: 2px solid #d71920;
+  border-radius: 4px;
+  width: 218px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.pbksplayer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pbksplayer-img-wrapper {
+  width: 223px;
+  height: 199px;
+  background-color: #f7f7f7;
+}
+
+.pbksplayer-img-wrapper img {
+  width: 223px;
+  height: 199px;
+  display: block;
+  border-bottom: 2px solid #d71920;
+}
+
+.pbksplayer-info {
+  padding: 12px 5px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.pbksplayer-info h4 {
+  margin: 0 0 2px 0;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.pbksplayer-info p {
+  margin: 0;
+  font-size: 0.7rem;
+  color: #666;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .pbksteam-header-container {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .pbksteam-identity {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .pbksroster-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-size: 100% auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .pbksteam-name-text {
+    font-size: 1.8rem;
+  }
+  
+  .pbksmain-logo {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .pbksstats-box {
+    padding: 15px;
+  }
+  
+  .pbksplayer-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .pbksplayer-card, .pbksplayer-img-wrapper, .pbksplayer-img-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+}

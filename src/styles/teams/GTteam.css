@@ -1,0 +1,267 @@
+/* Container & Global Styles */
+.gtteam-details {
+  background-color: #1b2133;
+  padding: 50px 5%;
+  font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+  color: white;
+  margin-bottom: 0px;
+}
+
+/* Header Flexbox */
+.gtteam-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gtteam-identity {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.gtmain-logo {
+  width: 170px;
+  height: 170px;
+  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.5));
+  margin: 5px;
+}
+
+.gtteam-name-text {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+/* TROPHY BADGE */
+.gttrophy-badge {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 6px 16px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  width: fit-content;
+  margin-bottom: 18px;
+}
+
+.gttrophy-img {
+  width: 62px;
+  height: 60px;
+  margin-right: 12px;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.gttrophy-years {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+.gtofficial-site-btn {
+  background: #d6a74c;
+  border: none;
+  padding: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.gtofficial-site-btn a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px 10px 20px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.gtofficial-site-btn:hover {
+  background: #b38a3d;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(214, 167, 76, 0.3);
+}
+
+/* STATS BOX */
+.gtstats-box {
+  background: rgba(0, 0, 0, 0.04);
+  padding: 20px 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  min-width: unset;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+.gtprofile-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.gtprofile-table td {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.gtlabel {
+  color: #d6a74c;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  width: 100px;
+}
+
+.gtsep {
+  width: 30px;
+  text-align: center;
+  color: #d6a74c
+}
+
+.gtval {
+  color: #d6a74c;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* PLAYER ROSTER */
+.gtroster-container {
+  background-color: #ffffff;
+  background-image: url("https://logowik.com/content/uploads/images/gujarat-titans6813.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1600px 2000px;
+  max-width: 1400px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding-left: 40px;
+}
+
+.gtcategory-title {
+  color: #000000;
+  letter-spacing: 8px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  font-size: 1.4rem;
+  border-bottom: 2px solid rgba(1, 1, 1, 0.2);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+.gtplayer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1300px;
+}
+
+/* Player Card */
+.gtplayer-card {
+  background: #ffffff;
+  border: 2px solid #00213f;
+  border-radius: 4px;
+  width: 218px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.gtplayer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.gtplayer-img-wrapper {
+  width: 223px;
+  height: 199px;
+  background-color: #f7f7f7;
+}
+
+.gtplayer-img-wrapper img {
+  width: 223px;
+  height: 199px;
+  display: block;
+  border-bottom: 2px solid #00213f;
+}
+
+.gtplayer-info {
+  padding: 12px 5px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.gtplayer-info h4 {
+  margin: 0 0 2px 0;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.gtplayer-info p {
+  margin: 0;
+  font-size: 0.7rem;
+  color: #666;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .gtteam-header-container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .gtteam-identity {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .gtroster-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-size: 100% auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .gtteam-name-text {
+    font-size: 1.8rem;
+  }
+
+  .gtmain-logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .gtstats-box {
+    padding: 15px;
+  }
+
+  .gtplayer-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .gtplayer-card,
+  .gtplayer-img-wrapper,
+  .gtplayer-img-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+}

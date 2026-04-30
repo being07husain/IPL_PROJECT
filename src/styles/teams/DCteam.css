@@ -1,0 +1,273 @@
+.dcteam-details {
+  background-color: #004c93;
+  padding: 50px 5%;
+  font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.dcteam-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.dcteam-title-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.dcteam-identity {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.dcmain-logo {
+  width: 170px;
+  height: 170px;
+  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.5));
+  margin: 5px;
+}
+
+.dcteam-name-text {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+/* Stats box styles unified below */
+
+.dcprofile-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dcprofile-table td {
+  padding: 12px 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dclabel {
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  width: 100px;
+}
+
+.dcsep {
+  width: 30px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.176);
+}
+
+.dcval {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.dcofficial-site-btn {
+  background: #dc2626;
+  border: none;
+  padding: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  text-align: center;
+  width: 234px;
+  align-items: center;
+}
+
+.dcofficial-site-btn a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px 10px 20px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.dcofficial-site-btn:hover {
+  background: #b91c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(220, 38, 38, 0.3);
+}
+
+.dcstats-box {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 20px 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  min-width: unset;
+  backdrop-filter: blur(10px);
+}
+
+.dcprofile-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dcprofile-table td {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dclabel {
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  width: 100px;
+}
+
+.dcsep {
+  width: 30px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.176);
+}
+
+.dcval {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.dcroster-container {
+  background-color: #ffffff;
+  background-image: url("https://documents.iplt20.com/ipl/DC/Logos/LogoOutline/DCoutline.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 900px 900px;
+  max-width: 1400px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding-left: 40px;
+}
+
+.dccategory-title {
+  color: #000000;
+  letter-spacing: 8px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  font-size: 1.4rem;
+  border-bottom: 2px solid rgba(1, 1, 1, 0.2);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+.dcplayer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1300px;
+}
+
+/* Player Card */
+.dcplayer-card {
+  background: #ffffff;
+  border: 2px solid #0263ff;
+  border-radius: 4px;
+  width: 218px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.dcplayer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dcplayer-img-wrapper {
+  width: 223px;
+  height: 199px;
+  background-color: #f7f7f7;
+}
+
+.dcplayer-img-wrapper img {
+  width: 223px;
+  height: 199px;
+  display: block;
+  border-bottom: 2px solid #050df3;
+}
+
+.dcplayer-info {
+  padding: 12px 5px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.dcplayer-info h4 {
+  margin: 0 0 2px 0;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.dcplayer-info p {
+  margin: 0;
+  font-size: 0.7rem;
+  color: #666;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .dcteam-header-container {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .dcteam-identity {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .dcroster-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-size: 100% auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .dcteam-name-text {
+    font-size: 1.8rem;
+  }
+  
+  .dcmain-logo {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .dcstats-box {
+    padding: 15px;
+  }
+  
+  .dcplayer-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .dcplayer-card, .dcplayer-img-wrapper, .dcplayer-img-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+}

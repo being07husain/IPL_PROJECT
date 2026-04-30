@@ -1,0 +1,252 @@
+.miteam-details {
+  background-color: #004ba0;
+  padding: 50px 5%;
+  font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.miteam-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.miteam-title-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.miteam-identity {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.mimain-logo {
+  width: 170px;
+  height: 170px;
+  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.5));
+  margin: 5px;
+}
+
+.miteam-name-text {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+.mistats-box {
+  background: rgba(0, 0, 0, 0.04);
+  padding: 20px 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  min-width: unset;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+
+/* TROPHY BADGE */
+.mitrophy-badge {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 6px 16px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  width: fit-content;
+  margin-bottom: 18px;
+}
+
+.mitrophy-img {
+  width: 62px;
+  height: 60px;
+  margin-right: 12px;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.mitrophy-years {
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  color: #f1f5f9;
+}
+
+.miprofile-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.miprofile-table td {
+  padding: 12px 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.milabel {
+  color: #876c01ef;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  width: 100px;
+}
+
+.misep {
+  color: #876c01ef;
+  width: 30px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.176);
+}
+
+.mival {
+  color: #876c01ef;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.miofficial-site-btn {
+  background: #876c01ef;
+  border: none;
+  padding: 0;
+  width: 230px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.miofficial-site-btn a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px 10px 20px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.miofficial-site-btn:hover {
+  background: #b08d02ef;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(135, 108, 1, 0.3);
+}
+
+.miroster-container {
+  background-color: #ffffff;
+  background-image: url("https://documents.iplt20.com/ipl/LSG/Logos/LogoOutline/LSGoutline.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 900px 900px;
+  max-width: 1400px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding-left: 40px;
+}
+
+.micategory-title {
+  color: #000000;
+  letter-spacing: 8px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  font-size: 1.4rem;
+  border-bottom: 2px solid rgba(1, 1, 1, 0.2);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+.miplayer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1300px;
+}
+
+/* Player Card */
+.miplayer-card {
+  background: #ffffff;
+  border: 2px solid #0b12eb;
+  border-radius: 4px;
+  width: 218px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.miplayer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.miplayer-img-wrapper {
+  width: 223px;
+  height: 199px;
+  background-color: #f7f7f7;
+}
+
+.miplayer-img-wrapper img {
+  width: 223px;
+  height: 199px;
+  display: block;
+  border-bottom: 2px solid #0b12eb;
+}
+
+.miplayer-info {
+  padding: 12px 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .miteam-header-container {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .miteam-identity {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .miroster-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-size: 100% auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .miteam-name-text {
+    font-size: 1.8rem;
+  }
+  
+  .mimain-logo {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .mistats-box {
+    padding: 15px;
+  }
+  
+  .miplayer-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .miplayer-card, .miplayer-img-wrapper, .miplayer-img-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+}

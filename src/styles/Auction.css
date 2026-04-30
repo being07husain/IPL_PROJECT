@@ -1,0 +1,385 @@
+/* 🌌 ROOT VARIABLES (pro touch) */
+:root {
+  --primary: #38bdf8;
+  --primary-soft: rgba(56, 189, 248, 0.15);
+  --bg-dark: #020617;
+  --bg-card: rgba(15, 23, 42, 0.75);
+  --border: rgba(56, 189, 248, 0.2);
+  --text-main: #e2e8f0;
+  --text-muted: #94a3b8;
+}
+
+/* 🌌 Container */
+.leaderboard-container {
+  padding: 50px 20px;
+  min-height: 100vh;
+  background: radial-gradient(circle at 20% 0%, #63cafa 0%, #001b92 60%);
+  color: var(--text-main);
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🏆 Title */
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--text-main);
+}
+
+/* 📋 List */
+.leaderboard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 🧊 Card */
+.leaderboard-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 26px;
+  border-radius: 20px;
+
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+
+  border: 1px solid var(--border);
+
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.6),
+    inset 0 0 0 1px rgba(255,255,255,0.02);
+
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  position: relative;
+}
+
+/* ✨ Gradient Border Glow */
+.leaderboard-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(120deg, transparent, var(--primary), transparent);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.leaderboard-card:hover::after {
+  opacity: 1;
+}
+
+/* Hover */
+.leaderboard-card:hover {
+  transform: translateY(-6px) scale(1.015);
+  box-shadow:
+    0 15px 50px rgba(56, 189, 248, 0.25),
+    0 0 20px rgba(56, 189, 248, 0.2);
+}
+
+/* 🔢 Rank */
+.rank {
+  font-size: 1.7rem;
+  font-weight: 700;
+  width: 60px;
+  color: #7dd3fc;
+}
+
+/* 🖼 Logo */
+.team-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+.leaderboard-card:hover .team-logo {
+  transform: scale(1.1);
+}
+
+/* 🧾 Info */
+.team-info {
+  flex: 1;
+  margin-left: 22px;
+}
+
+.team-info h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.team-info p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* 💰 Amount */
+.amount {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-shadow: 0 0 12px rgba(56, 189, 248, 0.6);
+}
+
+/* 🥇🥈🥉 TOP 3 (clean, not flashy) */
+.top-1 {
+  border-color: #38bdf8;
+}
+
+.top-2 {
+  border-color: #60a5fa;
+}
+
+.top-3 {
+  border-color: #0284c7;
+}
+
+/* 📂 Player list */
+.player-list {
+  margin-top: 12px;
+  padding: 16px;
+  border-radius: 16px;
+
+  background: rgba(2, 6, 23, 0.95);
+  border: 1px solid var(--border);
+
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.6);
+
+  animation: smoothExpand 0.35s ease;
+}
+
+/* 👤 Player card */
+.player-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+
+  border-radius: 10px;
+  margin-bottom: 6px;
+
+  transition: 0.25s;
+}
+
+/* hover = subtle (professional) */
+.player-card:hover {
+  background: var(--primary-soft);
+}
+
+/* Left */
+.player-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.player-name {
+  font-weight: 500;
+}
+
+.player-category {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+/* Right */
+.player-right {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.base {
+  font-size: 0.7rem;
+  color: #facc15;
+}
+
+.bid {
+  font-size: 0.9rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* 🎬 Smooth animation */
+@keyframes smoothExpand {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .leaderboard-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px 20px;
+  }
+
+  .team-info {
+    margin-left: 0;
+  }
+
+  .amount {
+    align-self: flex-end;
+    font-size: 1.1rem;
+  }
+
+  .player-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .player-right {
+    text-align: left;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+  
+  .rank {
+    font-size: 1.4rem;
+    width: 40px;
+  }
+}
+/* ================= TEAM THEMES ================= */
+/* ================= TEAM THEMES ================= */
+
+/* 🟡 CSK → Yellow BG + Blue Text */
+.team-CSK .player-list {
+  background: #facc15;
+}
+.team-CSK .player-card,
+.team-CSK .player-name,
+.team-CSK .player-category,
+.team-CSK .base,
+.team-CSK .bid {
+  color: #1e3a8a;
+}
+
+/* 🟣 KKR → Purple BG + Golden Text */
+.team-KKR .player-list {
+  background: #3b0764;
+}
+.team-KKR .player-card,
+.team-KKR .player-name,
+.team-KKR .player-category,
+.team-KKR .base,
+.team-KKR .bid {
+  color: #facc15;
+}
+
+/* 🔵 MI → Blue BG + Golden Text */
+.team-MI .player-list {
+  background: #1e3a8a;
+}
+.team-MI .player-card,
+.team-MI .player-name,
+.team-MI .player-category,
+.team-MI .base,
+.team-MI .bid {
+  color: #facc15;
+}
+
+/* 🔴 RCB → Red BG + Black Text */
+.team-RCB .player-list {
+  background: #b91c1c;
+}
+.team-RCB .player-card,
+.team-RCB .player-name,
+.team-RCB .player-category,
+.team-RCB .base,
+.team-RCB .bid {
+  color: #000000;
+}
+
+/* 🔴 PBKS → Red BG + White Text */
+.team-PBKS .player-list {
+  background: #dc2626;
+}
+.team-PBKS .player-card,
+.team-PBKS .player-name,
+.team-PBKS .player-category,
+.team-PBKS .base,
+.team-PBKS .bid {
+  color: #ffffff;
+}
+
+/* 🔷 LSG → Bluish BG + Red Text */
+.team-LSG .player-list {
+  background: #0ea5e9;
+}
+.team-LSG .player-card,
+.team-LSG .player-name,
+.team-LSG .player-category,
+.team-LSG .base,
+.team-LSG .bid {
+  color: #b91c1c;
+}
+
+/* 🌸 RR → Pink BG + Blue Text */
+.team-RR .player-list {
+  background: #ec4899;
+}
+.team-RR .player-card,
+.team-RR .player-name,
+.team-RR .player-category,
+.team-RR .base,
+.team-RR .bid {
+  color: #1e3a8a;
+}
+
+/* 🔴🔵 DC → Red/Blue BG + White Text */
+.team-DC .player-list {
+  background: linear-gradient(135deg, #1e3a8a, #dc2626);
+}
+.team-DC .player-card,
+.team-DC .player-name,
+.team-DC .player-category,
+.team-DC .base,
+.team-DC .bid {
+  color: #ffffff;
+}
+
+/* 🟠 SRH (keep premium) */
+.team-SRH .player-list {
+  background: #ea580c;
+}
+.team-SRH .player-card ,.team-SRH .player-name,.team-SRH .player-category,.team-SRH .base,.team-SRH .bid {
+  color: #ffffff;
+}
+
+.team-GT .player-list {
+  background: #00092c;
+}
+.team-GT .player-card {
+  color: #efb866;
+}
+.team-GT .player-name,
+.team-GT .player-category,
+.team-GT .base,
+.team-GT .bid {
+  color: #efb866;
+}

@@ -1,0 +1,282 @@
+/* Container & Global Styles */
+.cskteam-details {
+  background-color: #f4ce13;
+  padding: 50px 5%;
+  font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+  color: white;
+  margin-bottom: 0px;
+}
+
+/* Header Flexbox */
+.cskteam-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cskteam-identity {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.cskmain-logo {
+  width: 170px;
+  height: 170px;
+  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.5));
+  margin: 5px;
+}
+
+.cskteam-name-text {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+/* TROPHY BADGE */
+.csktrophy-badge {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 6px 16px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  width: fit-content;
+  margin-bottom: 18px;
+}
+
+.csktrophy-img {
+  width: 62px;
+  height: 60px;
+  margin-right: 12px;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.csktrophy-years {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+/* OFFICIAL SITE BUTTON */
+.cskofficial-site-btn {
+  background: #003b73;
+  border: none;
+  padding: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.cskofficial-site-btn a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px 10px 20px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.cskofficial-site-btn:hover {
+  background: #002855;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 59, 115, 0.3);
+}
+
+/* STATS BOX */
+.cskstats-box {
+  background: rgba(0, 0, 0, 0.04);
+  padding: 20px 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  min-width: unset;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+.cskprofile-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cskprofile-table td {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.csklabel {
+  color: #002855;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  width: 100px;
+}
+
+.csksep {
+  width: 30px;
+  text-align: center;
+  color: #002855;
+}
+
+.cskval {
+  color: #002855;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* PLAYER ROSTER */
+.cskroster-container {
+  background-color: #ffffff;
+  background-image: url("https://wallpapercave.com/w400/wp9765327.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 900px 900px;
+  max-width: 1400px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding-left: 40px;
+}
+
+.cskcategory-title {
+  color: #000000;
+  letter-spacing: 8px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  font-size: 1.4rem;
+  border-bottom: 2px solid rgba(1, 1, 1, 0.2);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+.cskplayer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1300px;
+}
+
+/* Player Card */
+.cskplayer-card {
+  background: #ffffff;
+  border: 2px solid #fffb00;
+  border-radius: 4px;
+  width: 218px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cskplayer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cskplayer-img-wrapper {
+  width: 223px;
+  height: 199px;
+  background-color: #f7f7f7;
+}
+
+.cskplayer-img-wrapper img {
+  width: 223px;
+  height: 199px;
+  display: block;
+  border-bottom: 2px solid #eff305;
+}
+
+.cskplayer-info {
+  padding: 12px 5px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.cskplayer-info h4 {
+  margin: 0 0 2px 0;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.cskplayer-info p {
+  margin: 0;
+  font-size: 0.7rem;
+  color: #666;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+/* Link */
+.cskteam-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.cskteam-link:hover {
+  text-decoration: none;
+}
+
+.cskteam-link h3,
+.cskteam-link p {
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .cskteam-header-container {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .cskteam-identity {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .cskroster-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-size: 100% auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .cskteam-name-text {
+    font-size: 1.8rem;
+  }
+  
+  .cskmain-logo {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .cskstats-box {
+    padding: 15px;
+  }
+  
+  .cskplayer-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .cskplayer-card, .cskplayer-img-wrapper, .cskplayer-img-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+}

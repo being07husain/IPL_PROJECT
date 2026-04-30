@@ -1,0 +1,265 @@
+/* Container & Global Styles */
+.kkrteam-details {
+  background-color: #3b215d;
+  padding: 50px 5%;
+  font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+  color: white;
+  margin-bottom: 0px;
+}
+
+/* Header Flexbox */
+.kkrteam-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.kkrteam-identity {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.kkrmain-logo {
+  width: 170px;
+  height: 170px;
+  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.5));
+  margin: 5px;
+}
+
+.kkrteam-name-text {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+/* TROPHY BADGE */
+.kkrtrophy-badge {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 6px 16px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  width: fit-content;
+  margin-bottom: 18px;
+}
+
+.kkrtrophy-img {
+  width: 62px;
+  height: 60px;
+  margin-right: 12px;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.kkrtrophy-years {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+.kkrofficial-site-btn {
+  background: #d4af37;
+  border: none;
+  padding: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.kkrofficial-site-btn a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px 10px 20px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.kkrofficial-site-btn:hover {
+  background: #b6922a;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+/* STATS BOX */
+.kkrstats-box {
+  background: rgba(0, 0, 0, 0.04);
+  padding: 20px 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  min-width: unset;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+.kkrprofile-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.kkrprofile-table td {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.kkrlabel {
+  color: #d4af37;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  width: 100px;
+}
+
+.kkrsep {
+  color: #d4af37;
+  width: 30px;
+  text-align: center;
+}
+
+.kkrval {
+  color: #d4af37;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* PLAYER ROSTER */
+.kkrroster-container {
+  background-color: #ffffff;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1600px 2000px;
+  max-width: 1400px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding-left: 40px;
+}
+
+.kkrcategory-title {
+  color: #000000;
+  letter-spacing: 8px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  font-size: 1.4rem;
+  border-bottom: 2px solid rgba(1, 1, 1, 0.2);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+.kkrplayer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1300px;
+}
+
+/* Player Card */
+.kkrplayer-card {
+  background: #ffffff;
+  border: 2px solid #aa06f5d2;
+  border-radius: 4px;
+  width: 218px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.kkrplayer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.kkrplayer-img-wrapper {
+  width: 223px;
+  height: 199px;
+  background-color: #f7f7f7;
+}
+
+.kkrplayer-img-wrapper img {
+  width: 223px;
+  height: 199px;
+  display: block;
+  border-bottom: 2px solid #aa06f5d2;
+}
+
+.kkrplayer-info {
+  padding: 12px 5px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.kkrplayer-info h4 {
+  margin: 0 0 2px 0;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.kkrplayer-info p {
+  margin: 0;
+  font-size: 0.7rem;
+  color: #666;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .kkrteam-header-container {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .kkrteam-identity {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .kkrroster-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-size: 100% auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .kkrteam-name-text {
+    font-size: 1.8rem;
+  }
+  
+  .kkrmain-logo {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .kkrstats-box {
+    padding: 15px;
+  }
+  
+  .kkrplayer-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .kkrplayer-card, .kkrplayer-img-wrapper, .kkrplayer-img-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+}
