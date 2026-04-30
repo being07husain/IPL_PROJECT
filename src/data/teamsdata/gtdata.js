@@ -1,30 +1,30 @@
-import GILL from "../../assets/GT/BATTERS/GILL.PNG";
-import SAI from "../../assets/GT/BATTERS/SAI.PNG";
-import JOS from "../../assets/GT/BATTERS/JOS.PNG";
-import PHILLIPS from "../../assets/GT/BATTERS/PHILLIPS.PNG";
-import TOM from "../../assets/GT/BATTERS/TOM.PNG";
-import ANUJ from "../../assets/GT/BATTERS/ANUJ.PNG";
-import KUMAR from "../../assets/GT/BATTERS/KUMAR.PNG";
+import GILL from "../../assets/GT/BATTERS/GILL.png";
+import SAI from "../../assets/GT/BATTERS/SAI.png";
+import JOS from "../../assets/GT/BATTERS/JOS.png";
+import PHILLIPS from "../../assets/GT/BATTERS/PHILLIPS.png";
+import TOM from "../../assets/GT/BATTERS/TOM.png";
+import ANUJ from "../../assets/GT/BATTERS/ANUJ.png";
+import KUMAR from "../../assets/GT/BATTERS/KUMAR.png";
 
-import SHAHRUKH from "../../assets/GT/ALLROUNDERS/SHAHRUKH.PNG";
-import TEWATIA from "../../assets/GT/ALLROUNDERS/TWETIA.PNG";
-import NISHANT from "../../assets/GT/ALLROUNDERS/NISHANT.PNG";
-import KISHORE from "../../assets/GT/ALLROUNDERS/KISHORE.PNG";
-import SUNDAR from "../../assets/GT/ALLROUNDERS/WASHINGTON.PNG";
-import ARSHAD from "../../assets/GT/ALLROUNDERS/ARSHAD.PNG";
-import JAYANT from "../../assets/GT/ALLROUNDERS/JAYANT.PNG";
-import HOLDER from "../../assets/GT/ALLROUNDERS/JASON.PNG";
+import SHAHRUKH from "../../assets/GT/ALLROUNDERS/SHAHRUKH.png";
+import TEWATIA from "../../assets/GT/ALLROUNDERS/TWETIA.png";
+import NISHANT from "../../assets/GT/ALLROUNDERS/NISHANT.png";
+import KISHORE from "../../assets/GT/ALLROUNDERS/KISHORE.png";
+import SUNDAR from "../../assets/GT/ALLROUNDERS/WASHINGTON.png";
+import ARSHAD from "../../assets/GT/ALLROUNDERS/ARSHAD.png";
+import JAYANT from "../../assets/GT/ALLROUNDERS/JAYANT.png";
+import HOLDER from "../../assets/GT/ALLROUNDERS/JASON.png";
 
-import RASHID from "../../assets/GT/BOWLERS/RASHID.PNG";
-import RABADA from "../../assets/GT/BOWLERS/RABADA.PNG";
-import SIRAJ from "../../assets/GT/BOWLERS/SIRAJ.PNG";
-import KRISHNA from "../../assets/GT/BOWLERS/KRISHNA.PNG";
-import ISHANT from "../../assets/GT/BOWLERS/ISHANT.PNG";
-import SUTHAR from "../../assets/GT/BOWLERS/MANAV.PNG";
-import BRAR from "../../assets/GT/BOWLERS/GURNOOR.PNG";
-import ASHOK from "../../assets/GT/BOWLERS/ASHOK.PNG";
-import WOOD from "../../assets/GT/BOWLERS/WOOD.PNG";
-import KHEJROLIYA from "../../assets/GT/BOWLERS/KULWANT.PNG";
+import RASHID from "../../assets/GT/BOWLERS/RASHID.png";
+import RABADA from "../../assets/GT/BOWLERS/RABADA.png";
+import SIRAJ from "../../assets/GT/BOWLERS/SIRAJ.png";
+import KRISHNA from "../../assets/GT/BOWLERS/KRISHNA.png";
+import ISHANT from "../../assets/GT/BOWLERS/ISHANT.png";
+import SUTHAR from "../../assets/GT/BOWLERS/MANAV.png";
+import BRAR from "../../assets/GT/BOWLERS/GURNOOR.png";
+import ASHOK from "../../assets/GT/BOWLERS/ASHOK.png";
+import WOOD from "../../assets/GT/BOWLERS/WOOD.png";
+import KHEJROLIYA from "../../assets/GT/BOWLERS/KULWANT.png";
 
 
 const GTteamprofile = {name:"Gujarat Titans", trophies:"2022", 
