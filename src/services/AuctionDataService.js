@@ -1,5 +1,5 @@
 // import data
-import auctionData from "../data/AuctionData";
+import auctionData from "../data/auctiondata";
 
 // ✅ Get all teams
 export const getAllTeams = () => auctionData.teams;
@@ -24,7 +24,6 @@ export const getTeamsWithSpending = () => {
 };
 
 export const getPlayersByTeam = (teamId) => {
-  return auctionData.players.filter(p => p.teamId === teamId);
   return auctionData.players
     .filter(player => player.teamId === teamId)
     .map(player => ({
