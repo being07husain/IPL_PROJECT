@@ -1,5 +1,5 @@
 import React from "react";
-import APP from "../../assets/logos/app.png";
+import APP from "../../assets/logos/APP.png";
 
 function PROMOTIONAPP() {
   return (

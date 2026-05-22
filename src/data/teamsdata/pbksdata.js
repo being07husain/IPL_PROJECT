@@ -1,9 +1,9 @@
-import IYER from "../../assets/PBKS/BATTERS/IYER.PNG";
-import WADHERA from "../../assets/PBKS/BATTERS/WADHERA.PNG";
+import IYER from "../../assets/PBKS/BATTERS/IYER.png";
+import WADHERA from "../../assets/PBKS/BATTERS/WADHERA.png";
 import VINOD from "../../assets/PBKS/BATTERS/VINOD.png";
-import PANNU from "../../assets/PBKS/BATTERS/PANNU.PNG";
+import PANNU from "../../assets/PBKS/BATTERS/PANNU.png";
 import AVINASH from "../../assets/PBKS/BATTERS/AVINASH.png";
-import SINGH from "../../assets/PBKS/BATTERS/SINGH.PNG";
+import SINGH from "../../assets/PBKS/BATTERS/SINGH.png";
 import SHASHANK from "../../assets/PBKS/BATTERS/SHASHANK.png";
 
 import ARSHDEEP from "../../assets/PBKS/BOWLERS/ARSHDEEP.png";

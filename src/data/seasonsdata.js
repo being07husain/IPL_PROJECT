@@ -1,22 +1,22 @@
 import Champions2008 from "../assets/SEASONS/CHAMPIONS/Champions2008.jpeg";
 import OrangeCap2008 from "../assets/SEASONS/ORANGECAPHOLDERS/OrangeCap2008.jpeg";
 import PurpleCap2008 from "../assets/SEASONS/PURPLECAPHOLDERS/PurpleCap2008.jfif";
-import PlayerOfSeries2008 from "../assets/SEASONS/PlayerofSeries/Series2008.jpg";
+import PlayerOfSeries2008 from "../assets/SEASONS/PlayerOfSeries/Series2008.jpg";
 
 import Champions2009 from "../assets/SEASONS/CHAMPIONS/Champions2009.jpeg";
 import OrangeCap2009 from "../assets/SEASONS/ORANGECAPHOLDERS/OrangeCap2009.jpeg";
 import PurpleCap2009 from "../assets/SEASONS/PURPLECAPHOLDERS/PurpleCap2009.jpeg";
-import PlayerOfSeries2009 from "../assets/SEASONS/PlayerofSeries/Series2009.jpeg";
+import PlayerOfSeries2009 from "../assets/SEASONS/PlayerOfSeries/Series2009.jpeg";
 
 import Champions2010 from "../assets/SEASONS/CHAMPIONS/Champions2010.jpeg";
 import OrangeCap2010 from "../assets/SEASONS/ORANGECAPHOLDERS/OrangeCap2010.jpg";
 import PurpleCap2010 from "../assets/SEASONS/PURPLECAPHOLDERS/PurpleCap2010.jfif";
-import PlayerOfSeries2010 from "../assets/SEASONS/PlayerofSeries/Series2010.jpg";
+import PlayerOfSeries2010 from "../assets/SEASONS/PlayerOfSeries/Series2010.jpg";
 
 import Champions2011 from "../assets/SEASONS/CHAMPIONS/Champions2011.jpeg";
 import OrangeCap2011 from "../assets/SEASONS/ORANGECAPHOLDERS/OrangeCap2011.jpg";
 import PurpleCap2011 from "../assets/SEASONS/PURPLECAPHOLDERS/PurpleCap2011.jpg";
-import PlayerOfSeries2011 from "../assets/SEASONS/PlayerofSeries/Series2011.jpg";
+import PlayerOfSeries2011 from "../assets/SEASONS/PlayerOfSeries/Series2011.jpg";
 
 import Champions2012 from "../assets/SEASONS/CHAMPIONS/Champions2012.jpeg";
 import OrangeCap2012 from "../assets/SEASONS/ORANGECAPHOLDERS/OrangeCap2012.jpg";
