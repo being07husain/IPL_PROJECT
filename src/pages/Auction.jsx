@@ -23,7 +23,7 @@ const Leaderboard = () => {
 
   return (
     <div className="leaderboard-container">
-      <h2 className="title">🏆 Auction Leaderboard</h2>
+      <h2 className="title">🏆 Auction Leaderboard IPL 2026</h2>
 
       <div className="leaderboard-list">
         {teams.map((team, index) => {
