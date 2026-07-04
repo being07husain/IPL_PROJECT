@@ -3,10 +3,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgb(49, 2, 90);
+  background: rgb(5, 1, 45);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(108, 43, 217, 0.15);
+  border-bottom: 1px solid rgba(58, 65, 133, 0.15);
   padding: 10px 30px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
   position: sticky;
@@ -58,13 +58,13 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: #6C2BD9;
+  background: #2b5fd9;
   transition: width 0.3s ease;
 }
 
 .nav-links a:hover {
   color: #FFFFFF;
-  text-shadow: 0 0 8px rgba(108, 43, 217, 0.6);
+  text-shadow: 0 0 8px rgba(43, 92, 217, 0.6);
 }
 
 .nav-links a:hover::after {
@@ -158,7 +158,7 @@
 }
 
 .btn-tickets {
-  background: #6C2BD9;
+  background: #1f0589;
   color: #FFFFFF;
   border: none;
   padding: 10px 20px;
@@ -169,12 +169,12 @@
   cursor: pointer;
   text-transform: uppercase;
   transition: background 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 0 12px rgba(108, 43, 217, 0.4);
+  box-shadow: 0 0 12px rgba(43, 46, 217, 0.4);
 }
 
 .btn-tickets:hover {
-  background: #7C3AED;
-  box-shadow: 0 0 20px rgba(108, 43, 217, 0.6);
+  background: #3a49ed;
+  box-shadow: 0 0 20px rgba(16, 23, 128, 0.6);
 }
 
 /* ===== MORE DROPDOWN ===== */

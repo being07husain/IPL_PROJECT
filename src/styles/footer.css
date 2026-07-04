@@ -5,15 +5,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap; /* Prevents items from collapsing on each other */
-  padding: 50px 5%;
+  flex-wrap: wrap;
+  /* Prevents items from collapsing on each other */
+  padding: 30px 1%;
   color: #e68f0e;
   font-family: 'Inter', sans-serif;
   border-top: 1px solid rgba(239, 184, 102, 0.25);
   box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.6);
   position: relative;
   overflow: hidden;
-  gap: 20px;
+  gap: 6px;
 }
 
 /* Subtle animated glow behind footer */
@@ -30,8 +31,13 @@
 }
 
 @keyframes footerGlow {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* ===== PARTNER SECTION ===== */
@@ -42,14 +48,15 @@
   justify-content: center;
   z-index: 1;
   text-align: center;
-  gap: 10px; /* Space between label and logo */
+  gap: 10px;
+  /* Space between label and logo */
 }
 
 .logo-group {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
@@ -70,7 +77,7 @@
 /* ===== LOGOS ===== */
 .ipl-footer img {
   height: auto;
-  max-width: 140px;
+  max-width: 120px;
   filter: brightness(0) invert(0.9) saturate(1.2);
   transition: transform 0.4s ease, filter 0.4s ease;
   border-radius: 10px;
@@ -101,7 +108,12 @@
 }
 
 /* Base styles for potential typography/icons added per request */
-.ipl-footer h1, .ipl-footer h2, .ipl-footer h3, .ipl-footer h4, .ipl-footer h5, .ipl-footer h6 {
+.ipl-footer h1,
+.ipl-footer h2,
+.ipl-footer h3,
+.ipl-footer h4,
+.ipl-footer h5,
+.ipl-footer h6 {
   color: #FFFFFF;
 }
 
@@ -115,7 +127,9 @@
   color: #FFFFFF;
 }
 
-.ipl-footer .icon:hover, .ipl-footer svg:hover, .ipl-footer i:hover {
+.ipl-footer .icon:hover,
+.ipl-footer svg:hover,
+.ipl-footer i:hover {
   color: #6C2BD9;
 }
 
@@ -125,7 +139,7 @@
     padding: 40px 20px;
     gap: 30px;
   }
-  
+
   .divider {
     height: 80px;
   }
@@ -159,7 +173,7 @@
     padding: 50px 15px;
     gap: 40px;
   }
-  
+
   .ipl-footer img {
     max-width: 130px;
   }
