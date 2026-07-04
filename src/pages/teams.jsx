@@ -34,12 +34,10 @@ function Teams() {
               <Link
                 key={index}
                 to={team.path}
-                className="team-link"
-              >
+                className="team-link">
                 <div
                   className={`TEAM-CARD ${team.titles ? "champion" : ""}`}
-                  style={{ backgroundColor: teamColors[team.name] || "#162787" }}
-                >
+                  style={{ backgroundColor: teamColors[team.name] || "#162787" }}>
                   <img src={team.logo} alt={team.name} />
                   <h3>{team.name}</h3>
                   {team.titles && <p>{team.titles}</p>}
